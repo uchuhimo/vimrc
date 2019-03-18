@@ -40,17 +40,17 @@ nmap <c-p> <Plug>yankstack_substitute_older_paste
 nmap <c-n> <Plug>yankstack_substitute_newer_paste
 
 
-""""""""""""""""""""""""""""""
-" => CTRL-P
-""""""""""""""""""""""""""""""
-let g:ctrlp_working_path_mode = 0
+" """"""""""""""""""""""""""""""
+" " => CTRL-P
+" """"""""""""""""""""""""""""""
+" let g:ctrlp_working_path_mode = 0
 
-let g:ctrlp_map = '<c-f>'
-map <leader>j :CtrlP<cr>
-map <c-b> :CtrlPBuffer<cr>
+" let g:ctrlp_map = '<c-f>'
+" map <leader>j :CtrlP<cr>
+" map <c-b> :CtrlPBuffer<cr>
 
-let g:ctrlp_max_height = 20
-let g:ctrlp_custom_ignore = 'node_modules\|^\.DS_Store\|^\.git\|^\.coffee'
+" let g:ctrlp_max_height = 20
+" let g:ctrlp_custom_ignore = 'node_modules\|^\.DS_Store\|^\.git\|^\.coffee'
 
 
 """"""""""""""""""""""""""""""
@@ -138,38 +138,38 @@ let g:lightline = {
       \ 'subseparator': { 'left': ' ', 'right': ' ' }
       \ }
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Vimroom
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:goyo_width=100
-let g:goyo_margin_top = 2
-let g:goyo_margin_bottom = 2
-nnoremap <silent> <leader>z :Goyo<cr>
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" " => Vimroom
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" let g:goyo_width=100
+" let g:goyo_margin_top = 2
+" let g:goyo_margin_bottom = 2
+" nnoremap <silent> <leader>z :Goyo<cr>
 
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Vim-go
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:go_fmt_command = "goimports"
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" " => Vim-go
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" let g:go_fmt_command = "goimports"
 
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Syntastic (syntax checker)
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:ale_linters = {
-\   'javascript': ['jshint'],
-\   'python': ['flake8'],
-\   'go': ['go', 'golint', 'errcheck']
-\}
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" " => Syntastic (syntax checker)
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" let g:ale_linters = {
+" \   'javascript': ['jshint'],
+" \   'python': ['flake8'],
+" \   'go': ['go', 'golint', 'errcheck']
+" \}
 
-nmap <silent> <leader>a <Plug>(ale_next_wrap)
+" nmap <silent> <leader>a <Plug>(ale_next_wrap)
 
-" Disabling highlighting
-let g:ale_set_highlights = 0
+" " Disabling highlighting
+" let g:ale_set_highlights = 0
 
-" Only run linting when saving the file
-let g:ale_lint_on_text_changed = 'never'
-let g:ale_lint_on_enter = 0
+" " Only run linting when saving the file
+" let g:ale_lint_on_text_changed = 'never'
+" let g:ale_lint_on_enter = 0
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
